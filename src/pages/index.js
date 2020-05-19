@@ -1,3 +1,13 @@
 import React from "react"
+import Header from "../components/molecules/Header"
 
-export default () => <div> Welcome to Bidr! </div>
+const App = () => {
+  return (
+    <div>
+      <Header />
+      <p> Welcome to Bidr!</p>
+    </div>
+  )
+}
+
+export default App
