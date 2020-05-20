@@ -23,6 +23,8 @@ const Hero = () => {
     <section className={styles.heroSection}>
       <Layout>
         <Header />
+      </Layout>
+      <Layout>
         <div className={styles.heroWrapper}>
           <div className={styles.informations}>
             <h1>Vos produits préférés à petit prix</h1>
@@ -41,10 +43,12 @@ const Hero = () => {
               <button type="submit">Se préinscrire</button>
             </form>
           </div>
-          <div className={styles.image}>
+
+          <div className={styles.imageContainer}>
             <Img
               fluid={data.file.childImageSharp.fluid}
               alt="Mockup of Bidr app on iPhone with a lot of zbabs"
+              className={styles.image}
             />
           </div>
         </div>
