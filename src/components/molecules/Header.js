@@ -17,13 +17,13 @@ const Header = () => {
     }
   `)
   return (
-    <div>
+    <header>
       <Img
         fluid={data.file.childImageSharp.fluid}
         alt="Bidr.'s logo"
         className={styles.image}
       />
-    </div>
+    </header>
   )
 }
 

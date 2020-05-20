@@ -5,22 +5,41 @@ body {
 a {
   font-family: "Gilroy-Medium";
   font-size: 24px;
-  color: #e44e96;
+  color: var(--CRAMBERRY);
   text-decoration: underline;
 }
 
 h1 {
   font-family: "Gilroy-Bold";
   font-size: 48px;
-  color: #131a33;
+  color: var(--MARTINIQUE_700);
   text-align: center;
+  margin: 0;
 }
 
-@media (min-width: 640px) {
+@media screen and (min-width: 800px) {
   h1 {
     font-family: "Gilroy-Bold";
     font-size: 80px;
-    color: #131a33;
+    color: var(--MARTINIQUE_700);
     text-align: left;
   }
+}
+
+p {
+  font-family: "Gilroy-Medium";
+  font-size: 18px;
+  color: var(--MARTINIQUE_700);
+
+}
+
+button {
+  font-family: "Gilroy-Bold";
+  font-size: 16px;
+  color: var(--WHITE);
+  padding: 20px;
+  border-radius: 100px;
+  border: none;
+  background: linear-gradient(180deg, #E44E96 0%, #A4277C 100%);
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.25);
 }

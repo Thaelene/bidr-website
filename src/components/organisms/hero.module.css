@@ -1,3 +1,23 @@
+@import '../../styles/Colors.css';
+
 .heroSection {
-  background-color: #dee7f5;
+  background: var(--MARTINIQUE_100);
+}
+
+.heroWrapper {
+  flex-direction: column;
+}
+
+@media screen and (min-width: 800px) {
+  .heroWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .heroWrapper>div {
+    display: inline-block;
+    width: 50%;
+  }
 }
