@@ -12,6 +12,7 @@ a {
 h1 {
   font-family: "Gilroy-Bold";
   font-size: 48px;
+  line-height: 52px;
   color: var(--MARTINIQUE_700);
   text-align: center;
   margin: 0;
@@ -19,9 +20,8 @@ h1 {
 
 @media screen and (min-width: 800px) {
   h1 {
-    font-family: "Gilroy-Bold";
     font-size: 80px;
-    color: var(--MARTINIQUE_700);
+    line-height: 84px;
     text-align: left;
   }
 }
@@ -29,17 +29,19 @@ h1 {
 p {
   font-family: "Gilroy-Medium";
   font-size: 18px;
+  line-height: 26px;
   color: var(--MARTINIQUE_700);
-
+  opacity: 0.5;
 }
 
 button {
   font-family: "Gilroy-Bold";
   font-size: 16px;
+  line-height: 24px;
   color: var(--WHITE);
   padding: 20px;
   border-radius: 100px;
   border: none;
-  background: linear-gradient(180deg, #E44E96 0%, #A4277C 100%);
+  background: linear-gradient(180deg, #e44e96 0%, #a4277c 100%);
   box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.25);
 }
