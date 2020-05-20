@@ -1,0 +1,22 @@
+a {
+  font-family: "Gilroy-Medium";
+  font-size: 24px;
+  color: #e44e96;
+  text-decoration: underline;
+}
+
+h1 {
+  font-family: "Gilroy-Bold";
+  font-size: 48px;
+  color: #131a33;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  h1 {
+    font-family: "Gilroy-Bold";
+    font-size: 80px;
+    color: #131a33;
+    text-align: left;
+  }
+}

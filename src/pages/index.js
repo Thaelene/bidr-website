@@ -1,11 +1,12 @@
 import React from "react"
-import Header from "../components/molecules/Header"
+
 import Layout from "../components/atoms/Layout"
+import Hero from "../components/organisms/Hero"
 
 const App = () => {
   return (
     <Layout>
-      <Header />
+      <Hero />
       <p> Welcome to Bidr!</p>
     </Layout>
   )

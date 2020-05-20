@@ -15,5 +15,14 @@ module.exports = {
         path: `./src/images`,
       },
     },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["Gilroy-Medium, Gilroy-Bold, Gilroy-ExtraBold"],
+          urls: ["/fonts/fonts.css"],
+        },
+      },
+    },
   ],
 }
