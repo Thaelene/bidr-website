@@ -28,19 +28,22 @@ const Hero = () => {
         <div className={styles.heroWrapper}>
           <div className={styles.informations}>
             <h1>Vos produits préférés à petit prix</h1>
-            <p>
+            <p className={styles.heroText}>
               Saurez-vous miser au bon moment pour repartir avec le lot convoité
               par des milliers d’autres biderz ?
             </p>
-            <form>
-              <label>
+            <form className={styles.heroForm}>
+              <label className={styles.heroLabel}>
                 <input
                   type="email"
                   name="email"
                   placeholder="Votre adresse email"
+                  className={styles.heroInput}
                 />
               </label>
-              <button type="submit">Se préinscrire</button>
+              <button type="submit" className={styles.heroButton}>
+                Se préinscrire
+              </button>
             </form>
           </div>
 
