@@ -1,0 +1,12 @@
+.TextImageHero {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.leftImage {
+  flex-direction: row;
+}
+
+section.rightImage {
+  flex-direction: row-reverse;
+}

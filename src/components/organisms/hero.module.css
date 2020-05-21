@@ -109,6 +109,20 @@ button {
 }
 
 /* Image */
+.imageContainer {
+  width: 100vw;
+  margin-left: -30px;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 800px) {
+  .imageContainer {
+    width: inherit;
+    margin-left: inherit;
+    overflow-x: inherit;
+  }
+}
+
 .image {
   width: 140%;
   margin-left: -20%;
