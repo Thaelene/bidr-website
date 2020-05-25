@@ -37,7 +37,7 @@ const Hero = () => {
                 <input
                   type="email"
                   name="email"
-                  placeholder="Votre adresse email"
+                  placeholder="Votre adresse mail"
                   className={styles.heroInput}
                 />
               </label>

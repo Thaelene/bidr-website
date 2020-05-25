@@ -1,63 +1,110 @@
-.MainFormSection {
+.mainFormSection {
   padding: 55px 0;
 }
 
-.MainFormContainer {
+.mainFormContainer {
   max-width: 930px;
   margin: 0 auto;
 }
 
-.MainFormInformations {
+.mainFormInformations {
   max-width: 850px;
   margin: 0 auto;
   text-align: center;
 }
 
-.MainFormInformations h4 {
+.mainFormInformations h4 {
   color: var(--CRANBERRY);
 }
 
-.MainFormInformations h2 {
+.mainFormInformations h2 {
   letter-spacing: -0.5px;
 }
 
 @media screen and (min-width: 800px) {
 
-  .MainFormInformations h4,
-  .MainFormInformations h2 {
+  .mainFormInformations h4,
+  .mainFormInformations h2 {
     text-align: center;
   }
 }
 
-.MainFormInformations p {
+.mainFormInformations p {
   max-width: 470px;
   margin: 0 auto;
 }
 
 /* Image  */
-.MainFormImageWrapper {
+.mainFormImageWrapper {
   width: 100vw;
   overflow-x: hidden;
   margin-left: -30px;
 }
 
 @media screen and (min-width: 800px) {
-  .MainFormImageWrapper {
+  .mainFormImageWrapper {
     max-width: 900px;
     width: inherit;
     margin-left: 0;
   }
 }
 
-.MainFormImage {
+.mainFormImage {
   width: 140%;
   max-width: 700px;
   margin-left: -30%;
 }
 
 @media screen and (min-width: 800px) {
-  .MainFormImage {
+  .mainFormImage {
     width: inherit;
     margin-left: 70px;
   }
+}
+
+
+/* Form */
+
+.mainFormForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 55px 0;
+}
+
+.mainFormInput {
+  width: 100%;
+  border: none;
+  font-family: "Gilroy-Bold";
+  font-size: 42px;
+  line-height: 52px;
+  letter-spacing: -2px;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  .mainFormInput {
+    font-family: "Gilroy-Bold";
+    font-size: 98px;
+    line-height: 152px;
+    letter-spacing: -5px;
+  }
+}
+
+.mainFormInput::placeholder {
+  opacity: 0.3;
+}
+
+.mainFormInput:focus {
+  outline: none;
+  font-size: 82px;
+}
+
+.mainFormInput:focus.mainFormInput::placeholder {
+  opacity: 0;
+}
+
+.mainFormButton {
+  width: 200px;
+  margin-top: 30px;
 }
