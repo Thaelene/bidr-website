@@ -1,0 +1,63 @@
+.MainFormSection {
+  padding: 55px 0;
+}
+
+.MainFormContainer {
+  max-width: 930px;
+  margin: 0 auto;
+}
+
+.MainFormInformations {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.MainFormInformations h4 {
+  color: var(--CRANBERRY);
+}
+
+.MainFormInformations h2 {
+  letter-spacing: -0.5px;
+}
+
+@media screen and (min-width: 800px) {
+
+  .MainFormInformations h4,
+  .MainFormInformations h2 {
+    text-align: center;
+  }
+}
+
+.MainFormInformations p {
+  max-width: 470px;
+  margin: 0 auto;
+}
+
+/* Image  */
+.MainFormImageWrapper {
+  width: 100vw;
+  overflow-x: hidden;
+  margin-left: -30px;
+}
+
+@media screen and (min-width: 800px) {
+  .MainFormImageWrapper {
+    max-width: 900px;
+    width: inherit;
+    margin-left: 0;
+  }
+}
+
+.MainFormImage {
+  width: 140%;
+  max-width: 700px;
+  margin-left: -30%;
+}
+
+@media screen and (min-width: 800px) {
+  .MainFormImage {
+    width: inherit;
+    margin-left: 70px;
+  }
+}

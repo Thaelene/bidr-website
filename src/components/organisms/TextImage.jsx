@@ -2,6 +2,7 @@ import React from "react"
 
 import Image from "../atoms/Image"
 import Layout from "../atoms/Layout"
+import InformationsText from "../atoms/InformationsText"
 
 import styles from "./textImage.module.css"
 
@@ -20,9 +21,7 @@ const TextImage = ({ imgPosition, img, imgAlt, subtitle, title, text }) => {
           ].join(" ")}
         >
           <div className={styles.textImageContentWrapper}>
-            <h4>{subtitle}</h4>
-            <h2>{title}</h2>
-            <p>{text}</p>
+            <InformationsText subtitle={subtitle} title={title} text={text} />
           </div>
           <div className={styles.textImageWrapper}>
             <Image
