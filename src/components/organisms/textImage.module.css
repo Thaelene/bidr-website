@@ -39,6 +39,9 @@
   .textImageContentWrapper {
     width: 60%;
     text-align: left;
+    margin-left: 60px;
+    margin-right: 0;
+    margin-bottom: 55px;
   }
 }
 
@@ -51,16 +54,25 @@
   width: 100vw;
   margin-left: -30px;
   overflow-x: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+@media screen and (min-width: 800px) {
+  .textImageWrapper {
+    width: 60%;
+    margin-left: 0;
+  }
 }
 
 .stylesImage {
   width: 120%;
-  margin-left: -10%;
 }
 
 @media screen and (min-width: 800px) {
   .stylesImage {
-    width: 60%;
+    width: 100%;
+    margin-left: 0;
   }
 }
 
@@ -68,6 +80,13 @@
 /* If image is on the right side */
 .rightImage .textImageContentWrapper {
   color: var(--WHITE);
+}
+
+@media screen and (min-width: 800px) {
+  .rightImage .textImageContentWrapper {
+    margin-right: 60px;
+    margin-left: 0;
+  }
 }
 
 .rightImage p {
