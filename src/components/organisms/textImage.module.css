@@ -1,12 +1,83 @@
-.TextImageHero {
+.textImageSection {
+  padding-top: 55px;
+}
+
+.textImageContainer {
   display: flex;
   justify-content: space-between;
 }
 
-section.leftImage {
-  flex-direction: row;
+.textImageContainer.leftImage {
+  flex-direction: column;
 }
 
-section.rightImage {
-  flex-direction: row-reverse;
+@media screen and (min-width: 800px) {
+  .textImageContainer.leftImage {
+    flex-direction: row-reverse;
+  }
+}
+
+.rightImage {
+  flex-direction: column;
+  background: var(--BLEUROYAL);
+}
+
+@media screen and (min-width: 800px) {
+  .rightImage {
+    flex-direction: row;
+  }
+}
+
+/* Content informations */
+
+.textImageContentWrapper {
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  .textImageContentWrapper {
+    width: 60%;
+    text-align: left;
+  }
+}
+
+.leftImage h4 {
+  color: var(--CRANBERRY);
+}
+
+/* Content image */
+.textImageWrapper {
+  width: 100vw;
+  margin-left: -30px;
+  overflow-x: hidden;
+}
+
+.stylesImage {
+  width: 120%;
+  margin-left: -10%;
+}
+
+@media screen and (min-width: 800px) {
+  .stylesImage {
+    width: 60%;
+  }
+}
+
+
+/* If image is on the right side */
+.rightImage .textImageContentWrapper {
+  color: var(--WHITE);
+}
+
+.rightImage p {
+  color: var(--WHITE);
+  opacity: 0.5;
+}
+
+.rightImage .stylesImage {
+  background: linear-gradient(to top, rgba(255, 255, 255, 0) 1%,
+      #4E54E4), url("../../images/pattern-background.png");
+  background-size: cover;
+  background-position: center center;
 }

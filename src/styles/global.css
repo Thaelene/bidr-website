@@ -27,6 +27,37 @@ h1 {
   }
 }
 
+h2 {
+  font-family: "Gilroy-Bold";
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  h2 {
+    font-size: 64px;
+    line-height: 70px;
+    text-align: left;
+  }
+}
+
+h4 {
+  font-family: "Gilroy-Bold";
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 800px) {
+  h4 {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+  }
+}
+
 p {
   font-family: "Gilroy-Medium";
   font-size: 18px;
