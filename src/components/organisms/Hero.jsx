@@ -32,11 +32,16 @@ const Hero = () => {
               Saurez-vous miser au bon moment pour repartir avec le lot convoité
               par des milliers d’autres biderz ?
             </p>
-            <form className={styles.heroForm}>
+            <form
+              className={styles.heroForm}
+              method="post"
+              netlify-honeypot="bot-field"
+              data-netlify="true"
+            >
               <label className={styles.heroLabel}>
                 <input
                   type="email"
-                  name="email"
+                  name="bot-field"
                   placeholder="Votre adresse mail"
                   className={styles.heroInput}
                 />

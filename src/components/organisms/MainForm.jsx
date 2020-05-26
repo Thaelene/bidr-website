@@ -24,11 +24,16 @@ const MainForm = () => {
               stylesImage={styles.mainFormImage}
             />
           </div>
-          <form className={styles.mainFormForm}>
+          <form
+            className={styles.mainFormForm}
+            method="post"
+            netlify-honeypot="bot-field"
+            data-netlify="true"
+          >
             <label className={styles.mainFormLabel}>
               <input
                 type="email"
-                name="email"
+                name="bot-field"
                 placeholder="Mon adresse mail"
                 className={styles.mainFormInput}
               />
