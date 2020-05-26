@@ -33,7 +33,13 @@ const Footer = () => {
             </div>
             <div className={styles.footerContact}>
               <p>Prenez rendez-vous :&nbsp;</p>
-              <a href="#">vérifier les disponibilités</a>
+              <a
+                href="https://calendly.com/bidr/15min?month=2020-05"
+                target="_blank"
+                rel="noreferrer"
+              >
+                vérifier les disponibilités
+              </a>
             </div>
           </div>
         </div>
@@ -55,7 +61,11 @@ const Footer = () => {
             </ul>
             <ul>
               <li>
-                <a href="https://twitter.com/bidr_app">
+                <a
+                  href="https://twitter.com/bidr_app"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Image
                     imgsrc="icon-twitter.png"
                     imgAlt="Bidr's twitter account"
@@ -64,7 +74,11 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://instagram.com/bidr.fr?igshid=1v1ssv6ueokrs">
+                <a
+                  href="https://instagram.com/bidr.fr?igshid=1v1ssv6ueokrs"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Image
                     imgsrc="icon-instagram.png"
                     imgAlt="Bidr's instagram account"
