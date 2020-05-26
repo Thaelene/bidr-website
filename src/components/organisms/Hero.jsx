@@ -7,6 +7,12 @@ import Header from "../molecules/Header"
 
 import styles from "./hero.module.css"
 
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&")
+}
+
 const Hero = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -20,8 +26,25 @@ const Hero = () => {
     }
   `)
 
+  const [state, setState] = React.useState({})
+
+  const handleChange = e => {
+    setState({ ...state, [e.target.email]: e.target.value })
+  }
+
   const handleSubmit = event => {
     event.preventDefault()
+    const form = event.target
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...state,
+      }),
+    })
+      .then(() => alert("welcome"))
+      .catch(error => alert(error))
   }
   return (
     <section className={styles.heroSection}>
@@ -40,16 +63,27 @@ const Hero = () => {
               className={styles.heroForm}
               name="preinscription campaign"
               method="post"
-              netlify-honeypot="bot-field"
               data-netlify="true"
+              netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
             >
+              <input
+                type="hidden"
+                name="form-name"
+                value="preinscription campaign"
+              />
+              <p hidden>
+                <label>
+                  Don’t fill this out: <input name="bot-field" />
+                </label>
+              </p>
               <label className={styles.heroLabel}>
                 <input
                   type="email"
-                  name="bot-field"
+                  name="email"
                   placeholder="Votre adresse mail"
                   className={styles.heroInput}
+                  onChange={handleChange}
                 />
               </label>
               <button type="submit" className={styles.heroButton}>
