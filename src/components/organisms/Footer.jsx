@@ -54,13 +54,6 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/cookies/" className={styles.footerBtnInternal}>
-                  Cookies
-                </Link>
-              </li>
-            </ul>
-            <ul>
-              <li>
                 <a
                   href="https://twitter.com/bidr_app"
                   target="_blank"

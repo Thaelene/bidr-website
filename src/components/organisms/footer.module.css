@@ -82,7 +82,13 @@ footer {
   list-style-type: none;
   display: flex;
   flex-direction: row;
+  align-items: center;
   padding: 0;
+  width: 100%;
+}
+
+.footerListItem {
+  margin-right: auto;
 }
 
 .footerBtnInternal {
@@ -93,15 +99,7 @@ footer {
   opacity: 0.5;
   color: var(--MARTINIQUE_700);
   text-decoration: none;
-  margin-right: 14px;
 }
-
-@media screen and (min-width: 800px) {
-  .footerBtnInternal {
-    margin-right: 40px;
-  }
-}
-
 
 .footerIcon {
   width: 24px;
