@@ -48,7 +48,7 @@ const Footer = () => {
         <Layout>
           <nav className={styles.footerCredentials}>
             <ul>
-              <li>
+              <li className={styles.footerListItem}>
                 <Link to="/legals/" className={styles.footerBtnInternal}>
                   Mentions Légales
                 </Link>
