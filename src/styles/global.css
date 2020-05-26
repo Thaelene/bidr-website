@@ -7,7 +7,7 @@ body {
 a {
   font-family: "Gilroy-Medium";
   font-size: 24px;
-  color: var(--CRAMBERRY);
+  color: var(--CRANBERRY);
   text-decoration: underline;
 }
 
@@ -79,8 +79,7 @@ p {
   font-family: "Gilroy-Medium";
   font-size: 18px;
   line-height: 26px;
-  color: var(--MARTINIQUE_700);
-  opacity: 0.5;
+  color: rgba(19, 26, 51, 0.5);
 }
 
 button {

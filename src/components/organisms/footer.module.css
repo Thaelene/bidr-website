@@ -91,6 +91,7 @@ footer {
   line-height: 20px;
   letter-spacing: -0.4px;
   opacity: 0.5;
+  color: var(--MARTINIQUE_700);
   text-decoration: none;
   margin-right: 14px;
 }

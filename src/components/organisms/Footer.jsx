@@ -43,12 +43,12 @@ const Footer = () => {
           <nav className={styles.footerCredentials}>
             <ul>
               <li>
-                <Link to="/legals" className={styles.footerBtnInternal}>
+                <Link to="/legals/" className={styles.footerBtnInternal}>
                   Mentions Légales
                 </Link>
               </li>
               <li>
-                <Link to="/cookies" className={styles.footerBtnInternal}>
+                <Link to="/cookies/" className={styles.footerBtnInternal}>
                   Cookies
                 </Link>
               </li>
