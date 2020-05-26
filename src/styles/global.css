@@ -1,6 +1,7 @@
 body {
   margin: 0;
   overflow-x: hidden;
+  color: var(--MARTINIQUE_700)
 }
 
 a {
@@ -14,7 +15,6 @@ h1 {
   font-family: "Gilroy-Bold";
   font-size: 48px;
   line-height: 52px;
-  color: var(--MARTINIQUE_700);
   text-align: center;
   margin: 0;
 }
@@ -40,6 +40,22 @@ h2 {
     line-height: 68px;
     text-align: left;
     margin-top: 0;
+  }
+}
+
+h3 {
+  font-family: "Gilroy-Medium";
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: -0.05em;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 800px) {
+  h3 {
+    font-size: 48px;
+    line-height: 60px;
   }
 }
 

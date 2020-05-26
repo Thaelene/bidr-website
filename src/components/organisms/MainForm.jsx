@@ -4,7 +4,7 @@ import Layout from "../atoms/Layout"
 import InformationsText from "../atoms/InformationsText"
 import Image from "../atoms/Image"
 
-import styles from "./MainForm.module.css"
+import styles from "./mainForm.module.css"
 
 const MainForm = () => {
   return (

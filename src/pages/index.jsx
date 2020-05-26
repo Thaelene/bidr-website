@@ -3,6 +3,7 @@ import React from "react"
 import Hero from "../components/organisms/Hero"
 import TextImage from "../components/organisms/TextImage"
 import MainForm from "../components/organisms/MainForm"
+import Footer from "../components/organisms/Footer"
 
 const App = () => {
   return (
@@ -25,7 +26,7 @@ const App = () => {
         text="Chaque événement a lieu en direct, l’animateur sera en charge du bon déroulement de l’enchère et se fera un plaisir de vous informer sur les produits."
       />
       <MainForm />
-      <p> Welcome to Bidr!</p>
+      <Footer />
     </div>
   )
 }
