@@ -19,6 +19,10 @@ const Hero = () => {
       }
     }
   `)
+
+  const handleSubmit = event => {
+    event.preventDefault()
+  }
   return (
     <section className={styles.heroSection}>
       <Layout>
@@ -34,9 +38,11 @@ const Hero = () => {
             </p>
             <form
               className={styles.heroForm}
+              name="preinscription campaign"
               method="post"
               netlify-honeypot="bot-field"
               data-netlify="true"
+              onSubmit={handleSubmit}
             >
               <label className={styles.heroLabel}>
                 <input

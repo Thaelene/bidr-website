@@ -7,6 +7,9 @@ import Image from "../atoms/Image"
 import styles from "./mainForm.module.css"
 
 const MainForm = () => {
+  const handleSubmit = event => {
+    event.preventDefault()
+  }
   return (
     <section className={styles.mainFormSection}>
       <Layout>
@@ -29,6 +32,7 @@ const MainForm = () => {
             method="post"
             netlify-honeypot="bot-field"
             data-netlify="true"
+            onSubmit={handleSubmit}
           >
             <label className={styles.mainFormLabel}>
               <input
