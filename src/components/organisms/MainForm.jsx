@@ -6,9 +6,33 @@ import Image from "../atoms/Image"
 
 import styles from "./mainForm.module.css"
 
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&")
+}
+
 const MainForm = () => {
+  const [state, setState] = React.useState({})
+
+  const handleChange = e => {
+    setState({ ...state, email: e.target.value })
+  }
+
   const handleSubmit = event => {
     event.preventDefault()
+    console.log({ state })
+    const form = event.target
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...state,
+      }),
+    })
+      .then(() => alert("welcome"))
+      .catch(error => alert(error))
   }
   return (
     <section className={styles.mainFormSection}>
@@ -30,14 +54,25 @@ const MainForm = () => {
           <form
             className={styles.mainFormForm}
             method="post"
+            name="preinscription campaign bottom"
             netlify-honeypot="bot-field"
             data-netlify="true"
             onSubmit={handleSubmit}
           >
+            <input
+              type="hidden"
+              name="form-name"
+              value="preinscription campaign bottom"
+            />
+            <p hidden>
+              <label>
+                Don’t fill this out: <input name="bot-field" />
+              </label>
+            </p>
             <label className={styles.mainFormLabel}>
               <input
                 type="email"
-                name="bot-field"
+                name="email"
                 placeholder="Mon adresse mail"
                 className={styles.mainFormInput}
               />
