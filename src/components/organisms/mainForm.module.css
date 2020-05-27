@@ -97,11 +97,16 @@
 
 .mainFormInput:focus {
   outline: none;
-  font-size: 82px;
 }
 
 .mainFormInput:focus.mainFormInput::placeholder {
   opacity: 0;
+}
+
+.mainFormInputSuccess {
+  font-size: 14px;
+  text-align: center;
+  color: var(--SUCCESS);
 }
 
 .mainFormButton {

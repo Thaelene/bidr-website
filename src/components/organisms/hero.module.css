@@ -45,7 +45,7 @@
 @media screen and (min-width: 800px) {
   .heroForm {
     flex-direction: row;
-    align-items: center;
+    align-items: end;
     margin: 60px 0 0;
   }
 }
@@ -95,6 +95,11 @@
   .heroInput:-webkit-autofill {
     padding-right: 60px;
   }
+}
+
+.heroInputSuccess {
+  text-align: center;
+  color: var(--SUCCESS);
 }
 
 .heroButton {

@@ -34,17 +34,21 @@ const Hero = () => {
 
   const handleSubmit = event => {
     event.preventDefault()
-    console.log({ state })
     const form = event.target
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": form.getAttribute("name"),
-        ...state,
+        email: state.email,
       }),
     })
-      .then(() => alert("welcome"))
+      .then(() => {
+        setState({
+          ...state,
+          success: true,
+        })
+      })
       .catch(error => alert(error))
   }
   return (
@@ -86,6 +90,12 @@ const Hero = () => {
                   className={styles.heroInput}
                   onChange={handleChange}
                 />
+                {state.success && (
+                  <p className={styles.heroInputSuccess}>
+                    Bravo, vous êtes désormais inscrit•e pour profiter en
+                    exclusivité des offres de Bidr.
+                  </p>
+                )}
               </label>
               <button type="submit" className={styles.heroButton}>
                 Se préinscrire

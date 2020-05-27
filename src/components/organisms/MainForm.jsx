@@ -15,25 +15,27 @@ function encode(data) {
 const MainForm = () => {
   const [state, setState] = React.useState({})
 
-  const handleChange = e => {
-    setState({ ...state, email: e.target.value })
+  const handleChange = event => {
+    setState({ ...state, email: event.target.value })
   }
 
   const handleSubmit = event => {
     event.preventDefault()
-    console.log({ state })
     const form = event.target
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": form.getAttribute("name"),
-        ...state,
+        email: state.email,
       }),
     })
-      .then(() => alert("welcome"))
+      .then(() => {
+        setState({ ...state, success: true })
+      })
       .catch(error => alert(error))
   }
+
   return (
     <section className={styles.mainFormSection}>
       <Layout>
@@ -77,6 +79,12 @@ const MainForm = () => {
                 className={styles.mainFormInput}
                 onChange={handleChange}
               />
+              {state.success && (
+                <p className={styles.mainFormInputSuccess}>
+                  Bravo, vous êtes désormais inscrit•e pour profiter en
+                  exclusivité des offres de Bidr.
+                </p>
+              )}
             </label>
             <button type="submit" className={styles.mainFormButton}>
               Je me préinscris
