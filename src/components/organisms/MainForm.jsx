@@ -75,6 +75,7 @@ const MainForm = () => {
                 name="email"
                 placeholder="Mon adresse mail"
                 className={styles.mainFormInput}
+                onChange={handleChange}
               />
             </label>
             <button type="submit" className={styles.mainFormButton}>
