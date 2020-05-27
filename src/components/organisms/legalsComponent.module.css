@@ -1,9 +1,13 @@
 .LegalsComponentSection h3 {
-  margin-top: 55px;
+  padding-top: 30px;
 }
 
 .LegalsComponentSection span {
   font-family: "Gilroy-Bold";
+}
+
+.LegalsComponentSection div {
+  margin-bottom: 55px;
 }
 
 .LegalsComponentSection .cta {

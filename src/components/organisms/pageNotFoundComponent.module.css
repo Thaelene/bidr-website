@@ -1,0 +1,23 @@
+.pageNotFoundSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: calc(100vh - 120px);
+  overflow: hidden;
+}
+
+.pageNotFoundImage {
+  width: 100%;
+}
+
+.pageNotFoundLink {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 800px) {
+  .pageNotFoundLink {
+    font-size: 18px;
+  }
+}
