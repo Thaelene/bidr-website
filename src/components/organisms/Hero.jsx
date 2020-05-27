@@ -29,11 +29,12 @@ const Hero = () => {
   const [state, setState] = React.useState({})
 
   const handleChange = e => {
-    setState({ ...state, [e.target.email]: e.target.value })
+    setState({ ...state, email: e.target.value })
   }
 
   const handleSubmit = event => {
     event.preventDefault()
+    console.log({ state })
     const form = event.target
     fetch("/", {
       method: "POST",
