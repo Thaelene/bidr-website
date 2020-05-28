@@ -1,8 +1,9 @@
 import React from "react"
 
-import Image from "../atoms/Image"
 import Layout from "../atoms/Layout"
 import InformationsText from "../atoms/InformationsText"
+import HammerAnimation from "../molecules/HammerAnimation"
+import HostAnimation from "../molecules/HostAnimation"
 
 import styles from "./textImage.module.css"
 
@@ -23,13 +24,14 @@ const TextImage = ({ imgPosition, img, imgAlt, subtitle, title, text }) => {
           <div className={styles.textImageContentWrapper}>
             <InformationsText subtitle={subtitle} title={title} text={text} />
           </div>
-          <div className={styles.textImageWrapper}>
-            <Image
-              imgsrc={img}
-              imgAlt={imgAlt}
-              stylesImage={styles.stylesImage}
-            />
-          </div>
+
+          {
+            (imgPosition = "left" ? (
+              <HammerAnimation img={img} imgAlt={imgAlt} />
+            ) : (
+              <HostAnimation img={img} imgAlt={imgAlt} />
+            ))
+          }
         </div>
       </Layout>
     </section>
