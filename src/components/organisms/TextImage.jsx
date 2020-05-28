@@ -29,14 +29,7 @@ const TextImage = ({ imgPosition, subtitle, title, text }) => {
 
           {imgPosition === "left" ? (
             <AnimationWrapper imgPosition="left">
-              <div
-                style={{
-                  position: "relative",
-                  width: "100%",
-                  height: 350,
-                  overflow: "hidden",
-                }}
-              >
+              <div className={styles.animationWrapperLeft}>
                 <Reveal effect="rotateL textImageProps">
                   <Image
                     imgsrc="gavel.png"
