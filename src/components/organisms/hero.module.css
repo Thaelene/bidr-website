@@ -130,6 +130,7 @@
 .image {
   width: 200%;
   margin-left: -50%;
+  overflow-x: hidden;
 }
 
 @media screen and (min-width: 800px) {
