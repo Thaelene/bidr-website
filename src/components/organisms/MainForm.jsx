@@ -6,6 +6,8 @@ import Image from "../atoms/Image"
 
 import styles from "./mainForm.module.css"
 
+import Reveal from "react-reveal/Reveal"
+
 function encode(data) {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -47,11 +49,13 @@ const MainForm = () => {
             style={styles.mainFormInformations}
           />
           <div className={styles.mainFormImageWrapper}>
-            <Image
-              imgsrc="Zbabz-button.png"
-              imgAlt="Bid CTA surrounded by Zbabz"
-              stylesImage={styles.mainFormImage}
-            />
+            <Reveal effect="scaleUp mainFormProps">
+              <Image
+                imgsrc="Zbabz-button.png"
+                imgAlt="Bid CTA surrounded by Zbabz"
+                stylesImage={styles.mainFormImage}
+              />
+            </Reveal>
           </div>
           <form
             className={styles.mainFormForm}

@@ -43,7 +43,7 @@
 
 @media screen and (min-width: 800px) {
   .mainFormImageWrapper {
-    max-width: 900px;
+    max-width: 100%;
     width: inherit;
     margin-left: 0;
   }
@@ -52,13 +52,13 @@
 .mainFormImage {
   width: 140%;
   max-width: 700px;
-  margin-left: -30%;
+  margin-left: -20%;
 }
 
 @media screen and (min-width: 800px) {
   .mainFormImage {
     width: inherit;
-    margin-left: 70px;
+    margin: 0 auto;
   }
 }
 

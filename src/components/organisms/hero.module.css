@@ -4,7 +4,7 @@
 
 @media screen and (min-width: 800px) {
   .heroSection {
-    min-height: 100vh;
+    min-height: 90vh;
     padding-bottom: 60px;
   }
 }

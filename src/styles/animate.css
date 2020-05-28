@@ -1,3 +1,5 @@
+/* HERO */
+
 .heroImageProps {
   width: 200px;
   position: absolute;
@@ -84,5 +86,134 @@
   100% {
     transform: translateX(140px) rotate(15deg);
     z-index: 1;
+  }
+}
+
+
+/* TEXT IMAGE TOP */
+.textImageProps {
+  position: absolute;
+  z-index: 1;
+}
+
+.rotateL {
+  top: 60px;
+  left: -200px;
+  width: 350px;
+  animation: rotateLMobile forwards;
+  z-index: 2;
+}
+
+@keyframes rotateLMobile {
+  0% {
+    transform: translate(0) rotate(-35deg);
+  }
+
+  100% {
+    transform: translate(50px) rotate(-20deg);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .rotateL {
+    top: 60px;
+    left: -160px;
+    width: 440px;
+    animation: rotateL forwards;
+  }
+}
+
+@keyframes rotateL {
+  0% {
+    transform: translate(0) rotate(-35deg);
+  }
+
+  100% {
+    transform: translate(80px) rotate(-15deg);
+  }
+}
+
+.rotateR {
+  top: 180px;
+  left: 160px;
+  width: 230px;
+  transform: rotate(-40deg);
+}
+
+@media screen and (min-width: 800px) {
+  .rotateR {
+    top: 240px;
+    left: 220px;
+    width: 300px;
+  }
+}
+
+/* TEXT IMAGE BOTTOM*/
+.appearRotateRtoL {
+  top: 0;
+  left: 0;
+  width: 200px;
+  animation: appearRotateRtoLMobile forwards;
+}
+
+@media screen and (min-width: 800px) {
+  .appearRotateRtoL {
+    width: 550px;
+    top: 80px;
+    left: -130px;
+    animation: appearRotateRtoLMobile forwards;
+  }
+}
+
+@keyframes appearRotateRtoLMobile {
+  0% {
+    transform: translate(30px) scale(0.5) rotate(0);
+  }
+
+  100% {
+    transform: translateX(-30px) scale(1.5) rotate(-15deg);
+  }
+}
+
+.appearRotateLtoR {
+  top: 150px;
+  right: 0;
+  width: 150px;
+  animation: appearRotateLtoRMobile forwards;
+}
+
+@media screen and (min-width: 800px) {
+  .appearRotateLtoR {
+    top: 200px;
+    right: 0;
+    width: 200px;
+    animation: appearRotateLtoRMobile forwards;
+  }
+}
+
+@keyframes appearRotateLtoRMobile {
+  0% {
+    transform: translate(-30px) scale(0.5) rotate(0);
+  }
+
+  100% {
+    transform: translateX(-20px) scale(1.5) rotate(15deg);
+  }
+}
+
+
+/* MAIN FORM */
+
+.scaleUp {
+  animation: scaleUp forwards;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }

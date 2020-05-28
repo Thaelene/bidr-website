@@ -1,0 +1,23 @@
+.textImageWrapper {
+  width: 100vw;
+  margin-left: -30px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+@media screen and (min-width: 800px) {
+  .textImageWrapper {
+    width: 60%;
+    margin-left: 0;
+  }
+}
+
+
+.rightImage.textImageWrapper {
+  background: linear-gradient(to top, rgba(255, 255, 255, 0) 1%,
+      #4E54E4), url("../../images/pattern-background.png");
+  background-size: cover;
+  background-position: center center;
+}
