@@ -7,6 +7,8 @@ import Header from "../molecules/Header"
 
 import styles from "./hero.module.css"
 
+import Reveal from "react-reveal/Reveal"
+
 function encode(data) {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -104,11 +106,13 @@ const Hero = () => {
           </div>
 
           <div className={styles.imageContainer}>
-            <Img
-              fluid={data.file.childImageSharp.fluid}
-              alt="Mockup of Bidr app on iPhone with a lot of zbabs"
-              className={styles.image}
-            />
+            <Reveal effect="scaleUp">
+              <Img
+                fluid={data.file.childImageSharp.fluid}
+                alt="Mockup of Bidr app on iPhone with a lot of zbabs"
+                className={styles.image}
+              />
+            </Reveal>
           </div>
         </div>
       </Layout>
