@@ -29,11 +29,29 @@ const TextImage = ({ imgPosition, subtitle, title, text }) => {
 
           {imgPosition === "left" ? (
             <AnimationWrapper imgPosition="left">
-              <Image
-                imgsrc="auctionnerHammer.png"
-                imgAlt="Auctionner's hammer in Bidr"
-                stylesImage={styles.stylesImage}
-              />
+              <div
+                style={{
+                  position: "relative",
+                  width: "100%",
+                  height: 350,
+                  overflow: "hidden",
+                }}
+              >
+                <Reveal effect="rotateL textImageProps">
+                  <Image
+                    imgsrc="gavel.png"
+                    imgAlt="Auctionner's hammer in Bidr"
+                    stylesImage={styles.stylesImage}
+                  />
+                </Reveal>
+                <Reveal effect="rotateR textImageProps">
+                  <Image
+                    imgsrc="gavel_base.png"
+                    imgAlt="Auctionner's hammer in Bidr"
+                    stylesImage={styles.stylesImage}
+                  />
+                </Reveal>
+              </div>
             </AnimationWrapper>
           ) : (
             <AnimationWrapper imgPosition="right">

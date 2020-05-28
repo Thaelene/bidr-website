@@ -90,13 +90,39 @@
 }
 
 
-/* TEXT IMAGE */
-
+/* TEXT IMAGE TOP */
 .textImageProps {
   position: absolute;
   z-index: 1;
 }
 
+.rotateL {
+  top: 0;
+  left: -200px;
+  width: 700px;
+  /* transform: rotate(-15deg); */
+  animation: rotateL forwards;
+  z-index: 2;
+}
+
+@keyframes rotateL {
+  0% {
+    transform: translate(0) rotate(-40deg);
+  }
+
+  100% {
+    transform: translate(50px) rotate(-10deg);
+  }
+}
+
+.rotateR {
+  top: 0;
+  left: -150px;
+  width: 700px;
+  transform: rotate(-40deg);
+}
+
+/* TEXT IMAGE BOTTOM*/
 .appearRotateRtoL {
   top: 0;
   left: 0;
