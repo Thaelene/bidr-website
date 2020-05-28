@@ -16,14 +16,18 @@ function encode(data) {
     .join("&")
 }
 
+const validateEmail = email => {
+  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  return re.test(String(email).toLowerCase())
+}
+
 const Hero = () => {
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "Hero-main.png" }) {
         childImageSharp {
-          fluid(quality: 100) {
+          fluid {
             ...GatsbyImageSharpFluid_noBase64
-            ...GatsbyImageSharpFluidLimitPresentationSize
           }
         }
       }
@@ -38,6 +42,7 @@ const Hero = () => {
 
   const handleSubmit = event => {
     event.preventDefault()
+    if (!validateEmail(state.email)) return
     const form = event.target
     fetch("/", {
       method: "POST",
