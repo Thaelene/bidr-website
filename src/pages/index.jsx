@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 
 import Hero from "../components/organisms/Hero"
 import TextImage from "../components/organisms/TextImage"
@@ -8,6 +9,16 @@ import Footer from "../components/organisms/Footer"
 const App = () => {
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Bidr - votre application mobile d'enchères</title>
+        <meta
+          name="description"
+          content="Bidr. est une application mobile d'enchères vous permettant de remporter vos produits préférés à petit prix. Saurez-vous miser au bon moment pour repartir avec le lot convoité par des milliers d'autres biderz ?
+Découvrez chaque semaine les marques du moment et prenez part à l’enchère pour espérer acheter des produits exclusifs pour presque rien."
+        />
+        <link rel="canonical" href="https://bidr.fr" />
+      </Helmet>
       <Hero />
       <TextImage
         imgPosition="left"
