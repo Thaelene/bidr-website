@@ -48,25 +48,27 @@ const TextImage = ({ imgPosition, subtitle, title, text }) => {
             </AnimationWrapper>
           ) : (
             <AnimationWrapper imgPosition="right">
-              <Reveal effect="appearRotateRtoL textImageProps">
+              <div style={{ width: "100%" }}>
+                <Reveal effect="appearRotateRtoL textImageProps">
+                  <Image
+                    imgsrc="losange01.png"
+                    imgAlt="Losange façon diamant"
+                    stylesImage=""
+                  />
+                </Reveal>
+                <Reveal effect="appearRotateLtoR textImageProps">
+                  <Image
+                    imgsrc="diamond01.png"
+                    imgAlt="Diamant en 3D"
+                    stylesImage=""
+                  />
+                </Reveal>
                 <Image
-                  imgsrc="losange01.png"
-                  imgAlt="Losange façon diamant"
-                  stylesImage=""
+                  imgsrc="host.png"
+                  imgAlt="Bidr's host"
+                  stylesImage={styles.stylesImage}
                 />
-              </Reveal>
-              <Reveal effect="appearRotateLtoR textImageProps">
-                <Image
-                  imgsrc="diamond01.png"
-                  imgAlt="Diamant en 3D"
-                  stylesImage=""
-                />
-              </Reveal>
-              <Image
-                imgsrc="host.png"
-                imgAlt="Bidr's host"
-                stylesImage={styles.stylesImage}
-              />
+              </div>
             </AnimationWrapper>
           )}
         </div>

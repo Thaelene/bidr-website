@@ -92,3 +92,13 @@
   color: var(--WHITE);
   opacity: 0.5;
 }
+
+.rightImage .stylesImage {
+  margin-left: -10%;
+}
+
+@media screen and (min-width: 800px) {
+  .rightImage .stylesImage {
+    margin-left: 0;
+  }
+}
