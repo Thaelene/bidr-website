@@ -6,8 +6,6 @@ import InformationsText from "../atoms/InformationsText"
 
 import styles from "./textImage.module.css"
 
-import Reveal from "react-reveal/Reveal"
-
 const TextImage = ({ imgPosition, img, imgAlt, subtitle, title, text }) => {
   return (
     <section
@@ -26,13 +24,11 @@ const TextImage = ({ imgPosition, img, imgAlt, subtitle, title, text }) => {
             <InformationsText subtitle={subtitle} title={title} text={text} />
           </div>
           <div className={styles.textImageWrapper}>
-            <Reveal effect="scaleUp" style={{ width: "100%" }}>
-              <Image
-                imgsrc={img}
-                imgAlt={imgAlt}
-                stylesImage={styles.stylesImage}
-              />
-            </Reveal>
+            <Image
+              imgsrc={img}
+              imgAlt={imgAlt}
+              stylesImage={styles.stylesImage}
+            />
           </div>
         </div>
       </Layout>
