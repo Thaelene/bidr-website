@@ -50,7 +50,7 @@ const MainForm = () => {
         <div className={styles.mainFormContainer}>
           <InformationsText
             subtitle="Système d'enchère"
-            title="Le prix grimpe par clique, saisissez le moment opportun !"
+            title="Le prix grimpe par clic, saisissez le moment opportun !"
             text="Gràce à vos Zbabz, surenchérissez afin de montrer aux autres participants que vous ne laisserez pas partir le produit aussi facilement."
             style={styles.mainFormInformations}
           />
