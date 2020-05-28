@@ -1,6 +1,6 @@
 .scaleUp {
   width: 100%;
-  animation: scaleUp forwards;
+  animation: scaleUp;
 }
 
 @keyframes scaleUp {
@@ -12,5 +12,97 @@
   100% {
     opacity: 1;
     transform: scale(1.2);
+  }
+}
+
+
+.heroImageProps {
+  width: 200px;
+  position: absolute;
+  z-index: 0;
+}
+
+@media screen and (min-width: 800px) {
+  .heroImageProps {
+    width: 400px;
+  }
+}
+
+.appearRtoL {
+  top: 70px;
+  left: 0;
+  animation: appearRtoLMobile forwards;
+}
+
+@media screen and (min-width: 800px) {
+  .appearRtoL {
+    top: 30px;
+    left: 130px;
+    animation: appearRtoL forwards;
+
+  }
+}
+
+@keyframes appearRtoLMobile {
+  0% {
+    transform: translate(0) rotate(0);
+    z-index: 0;
+  }
+
+  100% {
+    transform: translateX(-60px) rotate(-15deg);
+    z-index: 1;
+  }
+}
+
+@keyframes appearRtoL {
+  0% {
+    transform: translate(0) rotate(0);
+    z-index: 0;
+  }
+
+  100% {
+    transform: translateX(-200px) rotate(-15deg);
+    z-index: 1;
+  }
+}
+
+
+.appearLtoR {
+  top: 40px;
+  right: 0;
+  animation: appearLtoRMobile forwards;
+}
+
+@media screen and (min-width: 800px) {
+  .appearLtoR {
+    width: 250px;
+    top: 0;
+    right: 20px;
+    animation: appearLtoR forwards;
+  }
+}
+
+@keyframes appearLtoRMobile {
+  0% {
+    transform: translate(0) rotate(0);
+    z-index: 0;
+  }
+
+  100% {
+    transform: translateX(60px) rotate(15deg);
+    z-index: 1;
+  }
+}
+
+@keyframes appearLtoR {
+  0% {
+    transform: translate(0) rotate(0);
+    z-index: 0;
+  }
+
+  100% {
+    transform: translateX(140px) rotate(15deg);
+    z-index: 1;
   }
 }

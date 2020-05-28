@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../atoms/Layout"
+import Image from "../atoms/Image"
 import Header from "../molecules/Header"
 
 import styles from "./hero.module.css"
@@ -21,7 +22,7 @@ const Hero = () => {
       file(relativePath: { eq: "Hero-main.png" }) {
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_noBase64
           }
         }
       }
@@ -106,13 +107,25 @@ const Hero = () => {
           </div>
 
           <div className={styles.imageContainer}>
-            <Reveal effect="scaleUp">
-              <Img
-                fluid={data.file.childImageSharp.fluid}
-                alt="Mockup of Bidr app on iPhone with a lot of zbabs"
-                className={styles.image}
+            <Reveal effect="appearRtoL heroImageProps ">
+              <Image
+                imgsrc="crown02.png"
+                imgAlt="Couronne de champion"
+                stylesImage=""
               />
             </Reveal>
+            <Reveal effect="appearLtoR heroImageProps">
+              <Image
+                imgsrc="losange02.png"
+                imgAlt="Losange façon diamant"
+                stylesImage=""
+              />
+            </Reveal>
+            <Img
+              fluid={data.file.childImageSharp.fluid}
+              alt="Mockup of Bidr app on iPhone with a lot of zbabs"
+              className={styles.image}
+            />
           </div>
         </div>
       </Layout>

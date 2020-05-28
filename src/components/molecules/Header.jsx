@@ -11,7 +11,7 @@ const Header = () => {
       file(relativePath: { eq: "Bidr.-logo.png" }) {
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_noBase64
           }
         }
       }
