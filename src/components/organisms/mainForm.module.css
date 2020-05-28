@@ -72,6 +72,10 @@
   margin: 55px 0;
 }
 
+.mainFormForm label {
+  width: 100%;
+}
+
 .mainFormInput {
   width: 100%;
   border: none;
