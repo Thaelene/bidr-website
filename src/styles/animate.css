@@ -200,3 +200,20 @@
     transform: translateX(-20px) scale(1.5) rotate(15deg);
   }
 }
+
+
+/* MAIN FORM */
+
+.scaleUp {
+  animation: scaleUp forwards;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
