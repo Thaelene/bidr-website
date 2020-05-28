@@ -1,13 +1,13 @@
 import React from "react"
 
 import Layout from "../atoms/Layout"
+import Image from "../atoms/Image"
 import InformationsText from "../atoms/InformationsText"
-import HammerAnimation from "../molecules/HammerAnimation"
-import HostAnimation from "../molecules/HostAnimation"
+import AnimationWrapper from "../atoms/AnimationWrapper"
 
 import styles from "./textImage.module.css"
 
-const TextImage = ({ imgPosition, img, imgAlt, subtitle, title, text }) => {
+const TextImage = ({ imgPosition, subtitle, title, text }) => {
   return (
     <section
       className={[styles[`${imgPosition}Image`], styles.textImageSection].join(
@@ -25,13 +25,23 @@ const TextImage = ({ imgPosition, img, imgAlt, subtitle, title, text }) => {
             <InformationsText subtitle={subtitle} title={title} text={text} />
           </div>
 
-          {
-            (imgPosition = "left" ? (
-              <HammerAnimation img={img} imgAlt={imgAlt} />
-            ) : (
-              <HostAnimation img={img} imgAlt={imgAlt} />
-            ))
-          }
+          {imgPosition === "left" ? (
+            <AnimationWrapper>
+              <Image
+                imgsrc="auctionnerHammer.png"
+                imgAlt="Auctionner's hammer in Bidr"
+                stylesImage={styles.stylesImage}
+              />
+            </AnimationWrapper>
+          ) : (
+            <AnimationWrapper>
+              <Image
+                imgsrc="host.png"
+                imgAlt="Bidr's host"
+                stylesImage={styles.stylesImage}
+              />
+            </AnimationWrapper>
+          )}
         </div>
       </Layout>
     </section>
