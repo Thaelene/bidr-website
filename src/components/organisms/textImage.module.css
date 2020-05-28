@@ -52,6 +52,7 @@
 /* Content image */
 .stylesImage {
   width: 120%;
+  z-index: 2;
 }
 
 @media screen and (min-width: 800px) {
@@ -79,9 +80,9 @@
   opacity: 0.5;
 }
 
-.rightImage .stylesImage {
+/* .rightImage .stylesImage {
   background: linear-gradient(to top, rgba(255, 255, 255, 0) 1%,
       #4E54E4), url("../../images/pattern-background.png");
   background-size: cover;
   background-position: center center;
-}
+} */

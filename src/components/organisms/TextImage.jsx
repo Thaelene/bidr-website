@@ -7,6 +7,8 @@ import AnimationWrapper from "../atoms/AnimationWrapper"
 
 import styles from "./textImage.module.css"
 
+import Reveal from "react-reveal/Reveal"
+
 const TextImage = ({ imgPosition, subtitle, title, text }) => {
   return (
     <section
@@ -26,7 +28,7 @@ const TextImage = ({ imgPosition, subtitle, title, text }) => {
           </div>
 
           {imgPosition === "left" ? (
-            <AnimationWrapper>
+            <AnimationWrapper imgPosition="left">
               <Image
                 imgsrc="auctionnerHammer.png"
                 imgAlt="Auctionner's hammer in Bidr"
@@ -34,7 +36,21 @@ const TextImage = ({ imgPosition, subtitle, title, text }) => {
               />
             </AnimationWrapper>
           ) : (
-            <AnimationWrapper>
+            <AnimationWrapper imgPosition="right">
+              <Reveal effect="appearRotateRtoL textImageProps">
+                <Image
+                  imgsrc="losange01.png"
+                  imgAlt="Losange façon diamant"
+                  stylesImage=""
+                />
+              </Reveal>
+              <Reveal effect="appearRotateLtoR textImageProps">
+                <Image
+                  imgsrc="diamond01.png"
+                  imgAlt="Diamant en 3D"
+                  stylesImage=""
+                />
+              </Reveal>
               <Image
                 imgsrc="host.png"
                 imgAlt="Bidr's host"
