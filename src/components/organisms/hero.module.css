@@ -154,3 +154,17 @@
     margin-left: -10%;
   }
 }
+
+@media (min-width: 1340px) {
+  .image {
+    width: 140%;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1560px) {
+  .image {
+    width: 180%;
+    margin-left: 0;
+  }
+}

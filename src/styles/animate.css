@@ -26,6 +26,14 @@
   }
 }
 
+@media (min-width: 1560px) {
+  .appearRtoL {
+    top: 30px;
+    left: 340px;
+    animation: appearRtoLWilder forwards;
+  }
+}
+
 @keyframes appearRtoLMobile {
   0% {
     transform: translate(0) rotate(0);
@@ -50,6 +58,18 @@
   }
 }
 
+@keyframes appearRtoLWilder {
+  0% {
+    transform: translate(0) rotate(0);
+    z-index: 0;
+  }
+
+  100% {
+    transform: translateX(-250px) rotate(-15deg);
+    z-index: 1;
+  }
+}
+
 .appearLtoR {
   top: 40px;
   right: 0;
@@ -61,6 +81,14 @@
     width: 250px;
     top: 0;
     right: 20px;
+    animation: appearLtoR forwards;
+  }
+}
+
+@media (min-width: 1560px) {
+  .appearLtoR {
+    top: -20px;
+    right: -90px;
     animation: appearLtoR forwards;
   }
 }
