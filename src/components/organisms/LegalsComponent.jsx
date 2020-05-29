@@ -42,7 +42,7 @@ const LegalsComponent = () => {
       </div>
       <div>
         <h3>2. Cookies</h3>
-        <p>Notre site internet n'utilise pas encore de cookies.</p>
+        <p>Notre site internet n'utilise pas de cookies de navigation.</p>
       </div>
       <div>
         <h3>3. Propriété intellectuelle</h3>
