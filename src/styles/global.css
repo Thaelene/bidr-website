@@ -32,6 +32,13 @@ h1 {
   }
 }
 
+@media (min-width: 800px) and (max-width: 950px) {
+  h1 {
+    font-size: 64px;
+    line-height: 68px;
+  }
+}
+
 h2 {
   font-family: "Gilroy-Bold";
   font-size: 36px;
@@ -49,6 +56,13 @@ h2 {
   }
 }
 
+@media (min-width: 800px) and (max-width: 950px) {
+  h2 {
+    font-size: 52px;
+    line-height: 56px;
+  }
+}
+
 h3 {
   font-family: "Gilroy-Medium";
   font-size: 28px;
@@ -62,6 +76,13 @@ h3 {
   h3 {
     font-size: 48px;
     line-height: 60px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 950px) {
+  h3 {
+    font-size: 36px;
+    line-height: 40px;
   }
 }
 

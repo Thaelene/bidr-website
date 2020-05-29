@@ -35,3 +35,19 @@
   background-size: cover;
   background-position: center center;
 }
+
+@media screen and (min-width: 1100px) {
+  .rightImage.textImageWrapper {
+    background-size: cover;
+  }
+}
+
+
+@media (min-width: 500px) and (max-width: 1100px) {
+  .rightImage.textImageWrapper {
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 1%,
+        #4E54E4), url("../../images/pattern-background.png");
+    background-size: contain;
+    background-position: center center;
+  }
+}

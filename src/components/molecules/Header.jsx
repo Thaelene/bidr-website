@@ -8,7 +8,7 @@ import styles from "./header.module.css"
 const Header = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "Bidr.-logo.png" }) {
+      file(relativePath: { eq: "logo-bidr.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_noBase64

@@ -13,7 +13,7 @@ const Footer = () => {
         <div className={styles.footerContainer}>
           <div className={styles.footerLeft}>
             <Image
-              imgsrc="Bidr.-logo.png"
+              imgsrc="logo-bidr.png"
               imgAlt="Bidr logo"
               stylesImage={styles.footerImage}
             />

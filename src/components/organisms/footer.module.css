@@ -16,6 +16,12 @@ footer {
   }
 }
 
+@media (min-width: 800px) and (max-width: 950px) {
+  .footerContainer {
+    padding: 75px 0 100px;
+  }
+}
+
 .footerLeft {
   margin-bottom: 30px;
 }
@@ -43,6 +49,12 @@ footer {
 
 .footerRight {
   max-width: 550px;
+}
+
+@media (min-width: 800px) and (max-width: 950px) {
+  .footerRight {
+    max-width: 440px;
+  }
 }
 
 .footerContact {
