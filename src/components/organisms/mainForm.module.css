@@ -17,10 +17,6 @@
   color: var(--CRANBERRY);
 }
 
-.mainFormInformations h2 {
-  letter-spacing: -0.5px;
-}
-
 @media screen and (min-width: 800px) {
 
   .mainFormInformations h4,
@@ -41,6 +37,13 @@
   margin-left: -30px;
 }
 
+@media screen and (min-width: 500px) {
+  .mainFormImageWrapper {
+    width: inherit;
+    margin-left: 0;
+  }
+}
+
 @media screen and (min-width: 800px) {
   .mainFormImageWrapper {
     max-width: 100%;
@@ -53,6 +56,13 @@
   width: 140%;
   max-width: 700px;
   margin-left: -20%;
+}
+
+@media screen and (min-width: 500px) {
+  .mainFormImage {
+    width: inherit;
+    margin-left: 0;
+  }
 }
 
 @media screen and (min-width: 800px) {
@@ -74,6 +84,7 @@
 
 .mainFormForm label {
   width: 100%;
+  margin-left: -15px;
 }
 
 .mainFormInput {
@@ -84,6 +95,7 @@
   line-height: 52px;
   letter-spacing: -2px;
   text-align: center;
+  padding: 0;
 }
 
 @media screen and (min-width: 800px) {

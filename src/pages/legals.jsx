@@ -10,6 +10,7 @@ const Legals = () => {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Bidr - Mentions légales</title>
         <meta
           name="description"

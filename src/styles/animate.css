@@ -148,6 +148,15 @@
   }
 }
 
+@media (min-width: 800px) and (max-width: 1100px) {
+  .rotateR {
+    top: 240px;
+    left: 220px;
+    width: 200px;
+  }
+}
+
+
 /* TEXT IMAGE BOTTOM*/
 .appearRotateRtoL {
   top: 0;
