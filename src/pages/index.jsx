@@ -12,7 +12,7 @@ const App = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Bidr - votre application mobile d'enchères</title>
+        <title>Bidr - votre experience gamifiée d’enchères en live</title>
         <meta
           name="description"
           content="Bidr. est une application mobile d'enchères vous permettant de remporter vos produits préférés à petit prix. Saurez-vous miser au bon moment pour repartir avec le lot convoité par des milliers d'autres biderz ?
