@@ -3,7 +3,7 @@
 .heroImageProps {
   width: 200px;
   position: absolute;
-  z-index: 0;
+  z-index: 1;
 }
 
 @media screen and (min-width: 800px) {
@@ -14,23 +14,24 @@
 
 .appearRtoL {
   top: 70px;
-  left: 0;
-  animation: appearRtoLMobile forwards;
+  left: -40px;
+  transform: rotate(-15deg);
+  /* animation: appearRtoLMobile forwards; */
 }
 
 @media screen and (min-width: 800px) {
   .appearRtoL {
     top: 30px;
-    left: 130px;
-    animation: appearRtoL forwards;
+    left: -70px;
+    /* animation: appearRtoL forwards; */
   }
 }
 
 @media (min-width: 1560px) {
   .appearRtoL {
     top: 30px;
-    left: 340px;
-    animation: appearRtoLWilder forwards;
+    left: 20px;
+    /* animation: appearRtoLWilder forwards; */
   }
 }
 
@@ -72,24 +73,25 @@
 
 .appearLtoR {
   top: 40px;
-  right: 0;
-  animation: appearLtoRMobile forwards;
+  right: -30px;
+  transform: rotate(15deg);
+  /* animation: appearLtoRMobile forwards; */
 }
 
 @media screen and (min-width: 800px) {
   .appearLtoR {
     width: 250px;
     top: 0;
-    right: 20px;
-    animation: appearLtoR forwards;
+    right: -40px;
+    /* animation: appearLtoR forwards; */
   }
 }
 
 @media (min-width: 1560px) {
   .appearLtoR {
     top: -20px;
-    right: -90px;
-    animation: appearLtoR forwards;
+    right: -310px;
+    /* animation: appearLtoR forwards; */
   }
 }
 

@@ -55,13 +55,11 @@ const MainForm = () => {
             style={styles.mainFormInformations}
           />
           <div className={styles.mainFormImageWrapper}>
-            <Reveal effect="scaleUp mainFormProps">
-              <Image
-                imgsrc="Zbabz-button.png"
-                imgAlt="Bid CTA surrounded by Zbabz"
-                stylesImage={styles.mainFormImage}
-              />
-            </Reveal>
+            <Image
+              imgsrc="Zbabz-button.png"
+              imgAlt="Bid CTA surrounded by Zbabz"
+              stylesImage={styles.mainFormImage}
+            />
           </div>
           <form
             className={styles.mainFormForm}
@@ -97,7 +95,7 @@ const MainForm = () => {
               )}
             </label>
             <button type="submit" className={styles.mainFormButton}>
-              Je me préinscris
+              Je réserve ma place
             </button>
           </form>
         </div>

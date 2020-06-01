@@ -69,9 +69,16 @@ const Hero = () => {
         <div className={styles.heroWrapper}>
           <div className={styles.informations}>
             <h1>Vos produits préférés à petit prix</h1>
-            <p className={styles.heroText}>
+            {/* <p className={styles.heroText}>
               Saurez-vous miser au bon moment pour repartir avec le lot convoité
-              par des milliers d’autres biderz ?
+              par des milliers d’autres Biderz ?
+            </p> */}
+            <p className={styles.heroText}>
+              <span className={styles.heroTextSpan}>
+                Bidr arrive très prochainement avec des offres uniques.
+              </span>
+              Pour bénéficier de Zbabs gratuits et d'autres surprises dès sa
+              sortie sur AppStore ou Android Store, inscrivez-vous !
             </p>
             <form
               className={styles.heroForm}
@@ -107,7 +114,7 @@ const Hero = () => {
                 )}
               </label>
               <button type="submit" className={styles.heroButton}>
-                Se préinscrire
+                Je réserve ma place
               </button>
             </form>
           </div>
