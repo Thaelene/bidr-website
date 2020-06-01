@@ -18,6 +18,32 @@ const App = () => {
           content="Bidr. est une application mobile d'enchères vous permettant de remporter vos produits préférés à petit prix. Saurez-vous miser au bon moment pour repartir avec le lot convoité par des milliers d'autres biderz ?
 Découvrez chaque semaine les marques du moment et prenez part à l’enchère pour espérer acheter des produits exclusifs pour presque rien."
         />
+        {/* <!-- Open Graph / Facebook --> */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bidr.fr/" />
+        <meta
+          property="og:title"
+          content="Bidr - votre experience gamifiée d’enchères en live"
+        />
+        <meta
+          property="og:description"
+          content="Bidr. est une application mobile d'enchères vous permettant de remporter vos produits préférés à petit prix. Saurez-vous miser au bon moment pour repartir avec le lot convoité par des milliers d'autres biderz ?
+          Découvrez chaque semaine les marques du moment et prenez part à l’enchère pour espérer acheter des produits exclusifs pour presque rien."
+        />
+        <meta property="og:image" content="/thumbnail.png" />
+        {/* <!-- Twitter --> */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://bidr.fr/" />
+        <meta
+          property="twitter:title"
+          content="Bidr - votre experience gamifiée d’enchères en live"
+        />
+        <meta
+          property="twitter:description"
+          content="Bidr. est une application mobile d'enchères vous permettant de remporter vos produits préférés à petit prix. Saurez-vous miser au bon moment pour repartir avec le lot convoité par des milliers d'autres biderz ?
+          Découvrez chaque semaine les marques du moment et prenez part à l’enchère pour espérer acheter des produits exclusifs pour presque rien."
+        />
+        <meta property="twitter:image" content="/thumbnail.png" />
         <link rel="canonical" href="https://bidr.fr" />
       </Helmet>
       <Hero />
