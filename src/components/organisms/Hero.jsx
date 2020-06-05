@@ -77,8 +77,9 @@ const Hero = () => {
               <span className={styles.heroTextSpan}>
                 Bidr arrive très prochainement avec des offres uniques.
               </span>
-              Pour bénéficier de Zbabs gratuits et d'autres surprises dès sa
-              sortie sur AppStore ou Android Store, inscrivez-vous !
+              Pour bénéficier de Zbabs gratuits (la monnaie sur Bidr) et
+              d'autres surprises dès sa sortie sur AppStore ou Android Store,
+              inscrivez-vous !
             </p>
             <form
               className={styles.heroForm}
